@@ -3,6 +3,7 @@ import "./topbar.css"
 import { FaSearch } from "react-icons/fa";
 import { BsFillPersonFill, BsBellFill } from "react-icons/bs";
 import { BiMessageDetail } from "react-icons/bi";
+import { NavLink } from 'react-router-dom';
 
 export default function Topbar() {
     return (
@@ -17,7 +18,7 @@ export default function Topbar() {
                 </div>
                 <div className="topbarLinks">
                     <div className='topbarPageLinks'>
-                        <a href="*">Homepage</a>
+                        <NavLink to='/'>Homepage</NavLink>
                         <a href="*">Timeline</a>
                     </div>
                     <div className="topbarIcons">
@@ -35,7 +36,7 @@ export default function Topbar() {
                         </div>
                     </div>
                     <div className="topbarProfileLink">
-                        <img src='./assets/person/1.jpeg' alt='profile' className='profileImg' />
+                    <NavLink to='/profile'><img src='./assets/person/1.jpeg' alt='profile' className='profileImg' /></NavLink>                   
                     </div>
                 </div>
             </div>
